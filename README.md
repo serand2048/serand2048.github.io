@@ -1,1 +1,1 @@
-[ТЫК](www.serand2048.github.io)
+[ТЫК](https://serand2048.github.io)
