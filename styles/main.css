@@ -103,10 +103,25 @@ main h2 {
     text-decoration: underline;
 }
 
-.header-index {
-    padding-left: 5%;
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header-links {
-    padding-right: 5%;
+.header-index a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-links a:hover {
+    color: #ccc;
 }
