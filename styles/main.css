@@ -129,3 +129,8 @@ main h2 {
 .header-links a:hover {
     color: #ccc;
 }
+
+body {
+    background: linear-gradient(90deg,rgba(117, 117, 117, 1) 0%, rgba(84, 94, 145, 1) 100%);
+    min-height: 100vh;
+}
