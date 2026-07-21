@@ -1,1 +1,1 @@
-[ТЫК](https://serand2048.github.io)
+[ТЫК](https://serand2048.github.io){:target="_blank"}
