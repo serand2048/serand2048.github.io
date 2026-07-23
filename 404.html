@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/styles/main.css">
-    <title>404 - Страница не найдена</title>
+    <title>404 - Page not found</title>
 </head>
 <body>
-    {% include header-ru.html %}
+    {% include header.html %}
     <main>
         <div class="error-404">
             <h2>404</h2>
             <p>Такой страницы не существует, либо она ещё не создана.</p>
-            <a href="/index.html">Вернуться на главную</a>
+            <p>This page does not exist or has not been created yet.</p>
+            <a href="/index.html">Вернуться на главную / Return to home page</a>
         </div>
     </main>
     {% include footer.html %}
