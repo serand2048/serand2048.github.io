@@ -13,6 +13,8 @@ collections:
     folder: "ru"
     create: true
     slug: "{{slug}}"
+    extension: "md"
     fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Содержимое", name: "body", widget: "markdown" }
