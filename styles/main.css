@@ -198,8 +198,3 @@ body {
 .article-link:hover {
     text-decoration: underline;
 }
-
-.image-container {
-    width: auto;
-    height: auto;
-}
