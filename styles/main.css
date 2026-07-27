@@ -157,3 +157,44 @@ body {
 .error-404 a:hover {
     text-decoration: underline;
 }
+
+.callout {
+    background-color: #3a1414;
+    border-left: 4px solid #d32f2f;
+    border-radius: 8px;
+    padding: 20px 24px;
+    color: #f0d9d9;
+}
+
+.article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.article-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px 20px;
+}
+
+.article-card h3 {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.article-card p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.article-link {
+    color: #4a4a4a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.article-link:hover {
+    text-decoration: underline;
+}
