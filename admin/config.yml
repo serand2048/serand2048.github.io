@@ -9,7 +9,7 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "pages"
-    label: "Страницы"
+    label: "Страницы (RU)"
     folder: "ru"
     create: true
     slug: "{{slug}}"
@@ -18,3 +18,14 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Заголовок", name: "title", widget: "string" }
       - { label: "Содержимое", name: "body", widget: "markdown" }
+
+  - name: "pages_en"
+    label: "Pages (EN)"
+    folder: "en"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
