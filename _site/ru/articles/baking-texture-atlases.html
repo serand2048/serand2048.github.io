@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css">
+    <style type="text/css">
+        img {
+            width: 400px;
+            height: 250px;
+        }
+    </style>
+    <title>Game Textures Sources - serand2048</title>
+</head>
+
+<body>
+    <header>
+    <script type="text/javascript" src="/js/lang-switch.js"></script>
+    <div class="div-header">
+        <div class="header-index">
+            <a href="/index.html">serand2048</a>
+        </div>
+        <div class="header-links">
+            <a href="/ru/projects.html">Projects</a>
+            <a href="/ru/articles.html">Articles</a>
+            <a href="#" id="lang-switch" class="lang-switch">RU</a>
+        </div>
+    </div>
+</header>
+    <main>
+        <h2>Запекание текстурных карт в одну текстуру</h2>
+        <p>Объединение нескольких текстурных карт в одну, может пригодиться в старых игровых движках<br>
+            (оригинальные посты на <a href="https://forum.mixmods.com.br/f34-tutoriais/t7677-iii-vc-sa-texture-bake-adicionando-detalhes-nas-te#p44661" target="_blank">форуме Mixmods</a><br>
+            (и <a href="https://libertycity.ru/guides/how-to-make-mods/3027-uluchshenie-tekstur-s-pomoshhju-kart.html" target="_blank">LibertyCity</a>)<br>
+            В настоящее время в играх используются «шейдер-карты» — текстуры, которые определяют, как шейдеры игры должны реагировать на данной поверхности. Эти шейдер-карты отвечают за освещение, отражения, выпуклости, впадины и т. д. — все то, что делает поверхность более реалистичной.<br>
+            Как видно из приведенного ниже примера, текстура diffuse буквально не содержала никаких деталей, кроме цветов.<br>
+            <img src="/images/articles/shader-maps/4upGC8N.png" alt="Сравнение текстур"><br>
+            Как совместить все текстуры в одну:<br>
+            <h3>1 вариант (на прмере Фотошопа):</h3><br>
+            Импортируйте текстуру diffuse в Photoshop, скопируйте этот слой и в режиме наложения выберите «color» (Цветность). Этот слой должен всегда находиться на самом верху.<br>
+            Затем импортируйте normalmap, AO map и т. д., для всех выберите режим наложения «multiply» (Умножение), за исключением Height map — для него лучше подходит режим «soft light» (Мягкий свет).<br>
+            <img src="/images/articles/shader-maps/zyQukcO.jpg" alt="Сравнение текстур"><br>
+            Как видите, детали теперь «выделяются», вокруг изображения появилась полная тень — выглядит гораздо лучше.<br>
+            <h3>2 вариант (более простой, на примере paint.net):</h3><br>
+            1. Открываем diffuse текстуру, создаём новый слой.<br>
+            2. Вставляем в новый слой карту нормалей и делаем её чёрно-белой, при необходимости инвертируем цвета (смотрите сами, что лучше будет выглядеть).<br>
+            3. Изменяем режим наложения в свойствах слоя на "Перекрытие" и объединяем слои.<br>
+            4. Готово.
+        </p>
+    </main>
+    <footer>
+    <div class="footer-links">
+        <a href="https://discord.gg/KewD97q2Fn"><img src="/images/links/discord-icon-svgrepo-com.png" alt="Discord"></a>
+        <a href="https://github.com/serand2048"><img src="/images/links/Octicons-mark-github.svg.png" alt="Github"></a>
+        <a href="https://www.donationalerts.com/r/serand2048"><img src="/images/links/DA_Alert_Color.png" alt="DonationAlerts"></a>
+        <a href="https://boosty.to/serand2048"><img src="/images/links/Color.png" alt="Boosty"></a>
+    </div>
+    <div class="copyright">
+        <script>
+            const currentYear = new Date().getFullYear();
+            document.write("Copyright © " + currentYear + " serand2048");
+        </script>
+    </div>
+</footer>
+
+</body>
+</html>
