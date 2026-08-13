@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: url(/images/background.png) repeat;
+    background: url(/images/background.webp) repeat;
     background-size: 50%;
 }
 
@@ -194,4 +194,20 @@ main h2 {
 
 .article-link:hover {
     text-decoration: underline;
+}
+
+.iii-xbox-links tr {
+    outline: 3px solid #bbb;
+    background-color: #7e7e7e;
+    margin: 20px;
+}
+
+.iii-xbox a {
+    background-color: #aaa;
+}
+
+.mclass {
+    background-color: #4b4b4baa;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
