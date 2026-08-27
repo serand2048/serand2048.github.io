@@ -6,6 +6,9 @@ html, body {
 main {
     flex: 1;
     color:#ccc;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 *{
@@ -39,12 +42,6 @@ header {
 
 .div-header a:hover {
     color: #ccc;
-}
-
-main {
-    padding: 20px;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 footer {
@@ -265,4 +262,17 @@ main h2 {
 
 .admin-content button:hover {
     background: #333;
+}
+
+.comparison-table {
+    outline: 3px solid #bbb;
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(255, 180, 40);
+    text-align: center;
+    align-content: center;
+}
+
+.vcs-table table {
+    max-width: 900px;
 }
