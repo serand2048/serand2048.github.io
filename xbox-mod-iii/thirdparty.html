@@ -1,0 +1,25 @@
+---
+---
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Xbox Mod Thirdparty Mods</title>
+</head>
+<body>
+    {% include header.html %}
+    <main class="mclass">
+        <div id="md-content">
+            <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+            <script>
+                fetch('/xbox-mod-iii/docs/THIRDPARTY.md')
+                    .then(response => response.text())
+                    .then(text => {
+                        document.getElementById('md-content').innerHTML = marked.parse(text);
+                    });
+            </script>
+        </div>
+    </main>
+    {% include footer.html %}
+</body>
+</html>
