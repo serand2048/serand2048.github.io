@@ -211,3 +211,58 @@ main h2 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#fake-admin-panel {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.65);
+    font-family: monospace;
+}
+
+.admin-window {
+    width: 420px;
+    background: #111;
+    color: #eee;
+    border: 1px solid #555;
+    box-shadow: 0 20px 60px #000;
+}
+
+.admin-title {
+    padding: 12px;
+    background: #222;
+    border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin-title button {
+    background: none;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.admin-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-content button {
+    padding: 12px;
+    background: #1c1c1c;
+    border: 1px solid #555;
+    color: #eee;
+    cursor: pointer;
+    text-align: left;
+}
+
+.admin-content button:hover {
+    background: #333;
+}
