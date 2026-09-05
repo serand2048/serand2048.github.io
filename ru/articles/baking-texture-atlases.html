@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="/styles/main.css">
     <style type="text/css">
         img {
-            width: 400px;
-            height: 250px;
+            max-height: 250px;
+            max-width: 400px;
         }
     </style>
     <title>Texture Baking - serand2048</title>
@@ -27,6 +27,7 @@
             <h3>1 вариант (на прмере Фотошопа):</h3><br>
             Импортируйте текстуру diffuse в Photoshop, скопируйте этот слой и в режиме наложения выберите «color» (Цветность). Этот слой должен всегда находиться на самом верху.<br>
             Затем импортируйте normalmap, AO map и т. д., для всех выберите режим наложения «multiply» (Умножение), за исключением Height map — для него лучше подходит режим «soft light» (Мягкий свет).<br>
+            <img src="/images/articles/shader-maps/diVDbs4.png" alt="Порядок"><br><br>
             <img src="/images/articles/shader-maps/zyQukcO.jpg" alt="Сравнение текстур"><br>
             Как видите, детали теперь «выделяются», вокруг изображения появилась полная тень — выглядит гораздо лучше.<br>
             <h3>2 вариант (более простой, на примере paint.net):</h3><br>
